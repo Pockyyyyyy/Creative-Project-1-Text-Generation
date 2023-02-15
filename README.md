@@ -54,7 +54,7 @@ I continue the training on the existed trained model and data (The Potato & The 
               sample_every=200,
               save_every=200"
 8. Now the trained model is ready to generate a text. I set the length of the generate text is 3000, and the temperature is 0.7 (which is more crazier), with the prefix "Potato and Dragon".
-9. Now I have a kind of crazy generated text. But I think I trained the Potato & Dragon story too many steps, I think the result need more generation. That's the time for Plan B - Using Tracery.
+9. Now I have a kind of crazy-generated text. But I think I trained the Potato & Dragon story too many steps, so the result didn't come out as crazy as I thought. It needs more generates. Then Plan B comes out - Using Tracery to upgrade the text - generation.
 10. I actually tried to use Chat GPT to give me a Tracery Grammer Source based on the generated story I gave. But it seems 3000 words is a bit hard for it. So I choose another way to use Tracery.
 11. I separete the text into different sections. And then put these sections into OPENAI Playground with the input "write the sentences in different words but same meaning 2 times." Now I have 1 orginal generated text sentence and 2 same meaning but using different words sentences in a section. Then I used the Tracery Grammer to put these sections together. 
 12. I also created the HTML, CSS and Java Script as p5.js sketch for user to generate the story. When user press the "Click to generate" button, a random generated story will show up.
