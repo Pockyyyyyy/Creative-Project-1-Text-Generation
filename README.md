@@ -1,6 +1,8 @@
 # Creative-Project-1-Text-Generation
 Creative Project 1: Text Generation for Computation Media
 
+![A generated image with prompt: A magic potato, a golden dragon, wolf and seven goat by Stable Diffusion 2.1](https://ibb.co/DVJmtnT)
+
 ## In this project, I combine GPT-2 Text-Generating Model w/ GPU, Chat GPT, and Tracery to make a fairy tale style generated story.
 My idea is to first use Chat GPT to write two fairy tale style story. And then combine these two stories into one story. 
 Use GPT-2 Text-Generating Model to trained two fairy tales stories from Grimm's Fairy Tales first. Then add the story wrote by Chat GPT into the training. Generate a 3000 words story after the trainings. Then added this 3000 words story into the training list to train the GPT-2 Model again. Do this 3 times. 
