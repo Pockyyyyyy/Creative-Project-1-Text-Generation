@@ -46,22 +46,35 @@ Start training from the base GPT-2, with 1e-4 learning rate and 2000 steps. Make
               sample_every=200,
               save_every=500"
 I continue the training on the existed trained model and data (The Potato & The Dragon story).
-7. Trained GPT-2 Model with the Potato & Dragon story again. The code:
+7. Then I feel the story is kind of too short, so I actually let Chat GPT try to generate a text from these two stories, and it ended up giving me a story about two dragons's trip. Not really what I want, but it's a good material to train in GPT-2 Model.
+8. Trained GPT-2 Model with the Two Dragons. The code:
              "overwrite=True,
               learning_rate=1e-5,
               dataset=file_name,
               model_name='124M',
-              steps=200,
+              steps=300,
               restore_from='latest',
               run_name='run1',
               print_every=10,
               sample_every=200,
-              save_every=200"
-8. Now the trained model is ready to generate a text. I set the length of the generate text is 3000, and the temperature is 0.7 (which is more crazier), with the prefix "Potato and Dragon".
-9. Now I have a kind of crazy-generated text. But I think I trained the Potato & Dragon story too many steps, so the result didn't come out as crazy as I thought. It needs more generates. Then Plan B comes out - Using Tracery to upgrade the text - generation.
-10. I actually tried to use Chat GPT to give me a Tracery Grammer Source based on the generated story I gave. But it seems 3000 words is a bit hard for it. So I choose another way to use Tracery.
-11. I separete the text into different sections. And then put these sections into OPENAI Playground with the input "write the sentences in different words but same meaning 2 times." Now I have 1 orginal generated text sentence and 2 same meaning but using different words sentences in a section. Then I used the Tracery Grammer to put these sections together. 
-12. I also created the HTML, CSS and Java Script as p5.js sketch for user to generate the story. When user press the "Click to generate" button, a random generated story will show up.
+              save_every=300"
+9. Trained GPT-2 Model with the Grimm's Fairy Tales - The Wolf and Seven Kids again. The code:
+             "overwrite=True,
+              learning_rate=1e-5,
+              dataset=file_name,
+              model_name='124M',
+              steps=500,
+              restore_from='latest',
+              run_name='run1',
+              print_every=10,
+              sample_every=200,
+              save_every=500"
+10. Now the trained model is ready to generate a text. I set the length of the generate text is 3000, and the temperature is 0.7 (which is more crazier), with the prefix "Potato and Dragon".
+11. Now I have a kind of crazy-generated text. But I think I trained the Potato & Dragon story too many steps, so the result didn't come out as crazy as I thought. It needs more generates. Then Plan B comes out - Using Tracery to upgrade the text - generation.
+12. I actually tried to use Chat GPT to give me a Tracery Grammer Source based on the generated story I gave. But it seems 3000 words is a bit hard for it. So I choose another way to use Tracery.
+13. I separete the text into different sections. And then put these sections into OPENAI Playground with the input "write the sentences in different words but same meaning 2 times." Now I have 1 orginal generated text sentence and 2 same meaning but using different words sentences in a section. Then I used the Tracery Grammer to put these sections together. 
+14. I also created the HTML, CSS and Java Script as p5.js sketch for user to generate the story. When user press the "Click to generate" button, a random generated story will show up. Especially when Chat GPT was asked to write a sentence with the same meaning in different words, Chat GPT also polished the sentence, which made the article look kind of logic.
 
 ## Conclusion
 I feel like this project is really interesting to do and also drags me crazy at the same time. I feel like uncontrollable of the generated text is definitely the biggest challenge I'm facing. It's hard to get what I wish to get. So I have to change my plan in the middle of the process. Giving a frame to the generated text is not easy at all.
+I spent most of my time training the GPT-2 Text-generation Model and orgainze the Tracery gammer. The result actually ended up great. 
